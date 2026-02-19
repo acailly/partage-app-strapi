@@ -14,4 +14,9 @@ module.exports = ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+  // Ensuring API tokens are visible in the admin panel
+  // https://docs.strapi.io/cms/features/api-tokens#ensuring-api-tokens-are-visible-in-the-admin-panel
+  secrets: {
+    encryptionKey: env('ENCRYPTION_KEY'),
+  }
 });

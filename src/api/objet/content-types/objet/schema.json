@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objets",
+  "info": {
+    "singularName": "objet",
+    "pluralName": "objets",
+    "displayName": "Objet"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "preteurs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::preteur.preteur",
+      "private": true,
+      "mappedBy": "objets"
+    },
+    "categorie_objet": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorie-objet.categorie-objet",
+      "inversedBy": "objets"
+    }
+  }
+}

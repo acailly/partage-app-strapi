@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preteurs",
+  "info": {
+    "singularName": "preteur",
+    "pluralName": "preteurs",
+    "displayName": "Prêteur"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "private": true
+    },
+    "objets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::objet.objet",
+      "private": true,
+      "inversedBy": "preteurs"
+    }
+  }
+}
