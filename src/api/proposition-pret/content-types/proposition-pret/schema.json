@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proposition_prets",
+  "info": {
+    "singularName": "proposition-pret",
+    "pluralName": "proposition-prets",
+    "displayName": "PropositionPret"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}
