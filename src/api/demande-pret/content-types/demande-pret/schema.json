@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "demande_prets",
+  "info": {
+    "singularName": "demande-pret",
+    "pluralName": "demande-prets",
+    "displayName": "DemandePret"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "text"
+    },
+    "objet": {
+      "type": "string"
+    }
+  }
+}

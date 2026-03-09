@@ -6,8 +6,6 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::proposition-pret.proposition-pret');
-
 module.exports = createCoreController('api::proposition-pret.proposition-pret', ({ strapi }) => ({
     async create(ctx) {
         const email = ctx.request.body.data.email;
